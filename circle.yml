@@ -4,4 +4,4 @@ machine:
 test:
   override:
     - ci/parallelize.sh:
-      parallel: true
+        parallel: true
