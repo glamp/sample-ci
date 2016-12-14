@@ -3,4 +3,5 @@ machine:
     - docker
 test:
   override:
-    - ci/release.sh
+    case $CIRCLE_NODE_INDEX in 0) ci/release.sh 1 ;; 1) ci/release.sh 2;; esac:
+      parallel: true
