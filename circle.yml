@@ -3,4 +3,5 @@ machine:
     - docker
 test:
   override:
-    - ci/parallelize.sh: parallel: true
+    - ci/parallelize.sh:
+      parallel: true
