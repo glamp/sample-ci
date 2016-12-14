@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo ✓
+n="$1"
+printf "%${n}s" |tr " " "✓"
