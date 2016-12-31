@@ -1,14 +1,14 @@
 import time
 from bandit import Bandit
 
-for i in range(10):
-    print "hello %d" % i
-    time.sleep(1)
-
 with open('output-files/stuff.txt', 'wb') as f:
     f.write("HI!")
 
-import json
+bandit = Bandit('glamp', 'fe69f312-cb65-11e6-9d5f-6c400889bca4', 'http://localhost:4567/')
+bandit.metadata.x = 1
+bandit.metadata.y2 = 0.83
+bandit.metadata.r2 = "hello!"
 
-with open('metadata/metadata.json', 'wb') as f:
-    json.dump({"stuff": "goes here", "andEven": "more stuff!"}, f)
+for x in range(10):
+    for y in range(10):
+        bandit.report("a", x, y)
