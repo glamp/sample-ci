@@ -1,4 +1,5 @@
 import time
+from bandit import Bandit
 
 for i in range(10):
     print "hello %d" % i
