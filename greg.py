@@ -12,4 +12,5 @@ bandit.metadata.r2 = "hello!"
 for x in range(10):
     for y in range(10):
         bandit.report("a", x, y)
+        bandit.report("a", y, x)
         time.sleep(1)
