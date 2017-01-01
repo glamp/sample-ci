@@ -1,4 +1,5 @@
 import time
+import random
 from bandit import Bandit
 
 with open('output-files/stuff.txt', 'wb') as f:
@@ -12,5 +13,5 @@ bandit.metadata.r2 = "hello!"
 for x in range(10):
     for y in range(10):
         bandit.report("a", x, y)
-        bandit.report("b", y, x)
+        bandit.report("b", y, random.normalvariate(0, 1))
         time.sleep(1)
