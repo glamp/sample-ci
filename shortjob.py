@@ -1,3 +1,4 @@
-import sys
-print "good to go!"
-sys.exit(1)
+import os
+import pprint as pp
+
+pp.pprint(os.environ)
