@@ -1,2 +1,2 @@
-bandit-cli==0.0.13
+bandit-cli==0.0.14
 wes==0.1.5
