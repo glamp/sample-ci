@@ -1,7 +1,9 @@
-import nosuchlib
 import time
 import random
-from bandit import Bandit, job
+
+for i in range(1000):
+    print i
+    time.sleep(0.01)
 
 # with open('output-files/stuff.txt', 'wb') as f:
 #    f.write("HI!")
