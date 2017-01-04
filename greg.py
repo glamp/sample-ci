@@ -1,7 +1,7 @@
 import time
 import random
 
-for i in range(1000):
+for i in range(250):
     print i
     time.sleep(0.01)
 
