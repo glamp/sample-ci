@@ -1,3 +1,4 @@
+import nosuchlib
 import time
 import random
 from bandit import Bandit, job
@@ -16,5 +17,5 @@ from bandit import Bandit, job
 #            bandit.report(tag, y, random.normalvariate(0, 1))
 #        time.sleep(0.1)
 
-email = job.Email("greg@yhathq.com", "This is a test email", "Hello self!")
-email._write()
+# email = job.Email("greg@yhathq.com", "This is a test email", "Hello self!")
+# email._write()
