@@ -16,4 +16,5 @@ for x in range(10):
             bandit.report(tag, y, random.normalvariate(0, 1))
         time.sleep(0.1)
 
-job.Email("greg@yhathq.com", "This is a test email", "Hello self!")
+email = job.Email("greg@yhathq.com", "This is a test email", "Hello self!")
+email._write()
