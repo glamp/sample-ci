@@ -1,5 +1,5 @@
 import os
 import pprint as pp
 
-pp.pprint(os.environ)
+pp.pprint(range(100))
 
