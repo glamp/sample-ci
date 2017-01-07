@@ -1,1 +1,2 @@
 # sample-ci
+trigger
