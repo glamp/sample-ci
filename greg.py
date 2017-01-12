@@ -1,13 +1,12 @@
 import time
 import random
 from bandit import Bandit
+import sys
 
-for i in range(250):
-    print i
-    time.sleep(0.01)
+with open('output-files/stuff.txt', 'wb') as f:
+    f.write("HI!")
 
-# with open('output-files/stuff.txt', 'wb') as f:
-#    f.write("HI!")
+sys.exit(0)
 
 bandit = Bandit()
 # bandit.metadata.x = 1
