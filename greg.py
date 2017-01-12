@@ -1,5 +1,6 @@
 import time
 import random
+from bandit import Bandit
 
 for i in range(250):
     print i
