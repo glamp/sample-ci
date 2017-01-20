@@ -6,7 +6,6 @@ import sys
 with open('output-files/stuff.txt', 'wb') as f:
     f.write("HI!")
 
-sys.exit(0)
 
 bandit = Bandit()
 # bandit.metadata.x = 1
