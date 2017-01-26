@@ -1,4 +1,5 @@
 from bandit import Bandit
+import time
 import random
 import math
 
