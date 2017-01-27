@@ -4,7 +4,7 @@ from bandit import Bandit
 import json
 
 email = {
-    'recipients': 'greg@yhathq.com,colin@yhathq.com',
+    'recipients': ['greg@yhathq.com', 'colin@yhathq.com'],
     'subject': 'This is a test email',
     'body': 'Hi Colin'
 }
