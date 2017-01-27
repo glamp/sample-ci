@@ -10,7 +10,6 @@ df = pd.DataFrame({ "x": np.random.normal(10, 10, 10), "y": np.random.normal(10,
 
 
 email = Email()
-email.subject('plaintext email')
-# email.body('<p>Colin <s>rules</s>sucks\n' + df.to_html())
-email.body('but what if its plain')
+email.subject('This came from the client')
+email.body('<p>Colin <s>rules</s>sucks\n' + df.to_html())
 email.send(['greg@yhathq.com', 'colin@yhathq.com'])
