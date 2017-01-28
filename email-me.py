@@ -12,4 +12,6 @@ df = pd.DataFrame({ "x": np.random.normal(10, 10, 10), "y": np.random.normal(10,
 email = Email()
 email.subject('This came from the client')
 email.body('<p>Colin <s>rules</s>sucks\n' + df.to_html())
+df.to_csv('df.csv')
+email.add_attachment('df.csv')
 email.send(['greg@yhathq.com', 'colin@yhathq.com'])
