@@ -5,6 +5,8 @@ import json
 import pandas as pd
 import numpy as np
 from ggplot import *
+import matplotlib
+matplotlib.use('Agg')
 
 
 df = pd.DataFrame({ "x": np.random.normal(10, 10, 10), "y": np.random.normal(10, 10, 10) })
