@@ -15,7 +15,7 @@ df = pd.DataFrame({ "x": np.random.normal(10, 10, 10), "y": np.random.normal(10,
 # p.save("./sample-image.png", width=10, height=10)
 
 email = Email()
-email.subject('This came from the client')
+email.subject('firemaker')
 email.body('<p>Colin <s>rules</s>sucks\n' + df.to_html())
 df.to_csv('df.csv')
 email.add_attachment('df.csv')
