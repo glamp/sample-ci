@@ -12,7 +12,7 @@ from ggplot import *
 df = pd.DataFrame({ "x": np.random.normal(10, 10, 10), "y": np.random.normal(10, 10, 10) })
 
 p = ggplot(meat, aes(x='date', y='beef')) + geom_line()
-p.save("./sample-image.png")
+p.save("./sample-image.png", width=10, height=10)
 
 email = Email()
 email.subject('This came from the client')
