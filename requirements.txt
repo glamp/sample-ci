@@ -1,2 +1,1 @@
 bandit-cli
-ggplot==0.11.5
