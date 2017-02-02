@@ -1,1 +1,2 @@
 bokeh==0.12.2
+bandit-cli
