@@ -3,7 +3,7 @@ from bokeh import io
 from bokeh.plotting import figure, output_file, show
 
 bandit = Bandit()
-io.output_file(bandit.output_dir + "testfile.html")
+io.output_file(bandit.output_dir + "my-cool-plot-for-alex.html")
 
 # prepare some data
 x = [1, 2, 3, 4, 5]
