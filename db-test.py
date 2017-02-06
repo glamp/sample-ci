@@ -3,6 +3,7 @@ import psycopg2 as pg
 import pandas as pd
 
 bandit = Bandit()
+print bandit.get_connection('ncaab')
 con = pg.connect(bandit.get_connection('ncaab'))
 
 sql = """
