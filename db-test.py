@@ -1,6 +1,10 @@
 from bandit import Bandit
 import psycopg2 as pg
 import pandas as pd
+import os
+import pprint as pp
+
+pp.pprint(os.environ)
 
 bandit = Bandit()
 print bandit.get_connection('ncaab')
