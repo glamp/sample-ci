@@ -16,7 +16,7 @@ select
 from
   games g
 inner join
-  play_by_play p on
+  playbyplay p on
     g.game_id = p.game_id;
 """
 
